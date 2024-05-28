@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Website</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 100vh;
+            background: url("./bg2.png") center no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .nav {
+            padding: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            font-size: 1.3rem;
+            position: fixed;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav a:hover {
+            color: rgb(129, 129, 252);
+        }
+
+        .home {
+            padding: 100px 30px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            overflow-y: auto;
+            height: 100vh;
+        }
+
+        .card {
+            margin: 20px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;
+            padding: 20px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 1.1rem;
+            margin: 10px 0 5px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                align-items: center;
+            }
+
+            .nav a {
+                margin: 5px 0;
+            }
+
+            .card {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav {
+                font-size: 1rem;
+            }
+
+            .card {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="kelompok.html">Kelompok</a>
+    </div>
+
+    <div class="home">
+        <div class="card">
+            <img src="./aulia.jpg" alt="Foto Anggota">
+            <h2>Aulia Amanda Muracie</h2>
+            <p>E1D023105</p>
+        </div>
+        <div class="card">
+            <img src="./unang.jpg" alt="Foto Anggota">
+            <h2>Unang Nurrohmat</h2>
+            <p>E1D023015</p>
+        </div>
+        <div class="card">
+            <img src="./luffiana.jpg" alt="Foto Anggota">
+            <h2>Luffiana Wulandari</h2>
+            <p>E1D023115</p>
+        </div>
+        <div class="card">
+            <img src="./efri.jpg" alt="Foto Anggota">
+            <h2>Effri Ramonzah</h2>
+            <p>E1D023075</p>
+        </div>
+        <div class="card">
+            <img src="./abi.jpg" alt="Foto Anggota">
+            <h2>Abi Rohman</h2>
+            <p>E1D023045</p>
+        </div>
+        <div class="card">
+            <img src="./tegar.jpg" alt="Foto Anggota">
+            <h2>Tegar Wina Oktarian</h2>
+            <p>E1D023085</p>
+        </div>
+        <div class="card">
+            <img src="./irham.jpg" alt="Foto Anggota">
+            <h2>Irham Arsyat</h2>
+            <p>E1D023109</p>
+        </div>
+        <div class="card">
+            <img src="./lusi.jpg" alt="Foto Anggota">
+            <h2>Lusi Yuniati</h2>
+            <p>E1D023005</p>
+        </div>
+        <div class="card">
+            <img src="./cherly.jpg" alt="Foto Anggota">
+            <h2>Cherly Berlian Putri</h2>
+            <p>E1D023011</p>
+        </div>
+    </div>
+</body>
+</html>

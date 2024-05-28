@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Website</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            height: 100vh;
+            background: url("./bg.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .nav{
+            padding: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.3rem;
+            position: fixed;
+            width: 100%;
+            height: auto;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5); 
+
+        }
+
+        .nav a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav a:hover{
+            color: rgb(129, 129, 252);
+        }
+
+        .home{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .home h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .content{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .content a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .content div{
+            height: 3.5vh;
+            border-radius: 8px;
+            width: 15vh;
+            background-color: rgb(60,94,199);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content div:hover{
+            background-color: white;
+            color: black;
+            transition: 0.2s ease-in-out;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+       <a href="index.html"> Home</a>
+       <a href="kelompok.html">Kelompok</a>
+    </div>
+
+    <div class="home">
+        <div class="content">
+            <h1>Welcome To Our Website !</h1>
+            <a href="materi.html"> <div>Lihat Materi</div></a>
+        </div>
+    </div>
+    
+</body>
+</html>

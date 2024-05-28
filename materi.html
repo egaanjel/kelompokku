@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Website</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 100vh;
+            background: url("./bg2.png") center no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .nav {
+            padding: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+            font-size: 1.3rem;
+            position: fixed;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1; 
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav a:hover {
+            color: rgb(129, 129, 252);
+        }
+
+        .home {
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow-y: auto;
+            height: 100vh;
+        }
+
+        .box {
+            width: 90%;
+            max-width: 600px;
+            margin: 40px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            color: black;
+            padding: 25px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+        }
+
+        .box h1 {
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        .nama {
+            float: right;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                align-items: center;
+            }
+
+            .box {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .nama {
+                float: none;
+                text-align: right;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav {
+                font-size: 1rem;
+            }
+
+            .box {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="kelompok.html">Kelompok</a>
+    </div>
+
+    <div class="home">
+        <div class="box">
+            <h1>Apa itu website?</h1>
+            <p>Pengertian website secara umum adalah kumpulan halaman web yang saling terkait dan dapat diakses melalui internet. Halaman web tersebut berisi informasi, seperti teks, gambar, video, atau animasi. Website dapat digunakan untuk berbagai keperluan, seperti bisnis, pendidikan, hiburan, dan lainnya.</p>
+            <p class="nama">- Aulia Amanda Muracie</p>
+        </div>
+        <div class="box">
+            <h1>Sejarah HTML</h1>
+            <p>HTML diciptakan oleh Sir Tim Berners-lee pada akhir tahun 1991 namun tidak dirilis secara resmi. Sir Tim Berners-lee merilis HTML versi pertama pada tahun 1993 dengan tujuan untuk berbagi informasi yang dapat dibaca dan diakses melalui web browser.</p>
+            <p class="nama">- Unang nurrohmat</p>
+        </div>
+        <div class="box">
+            <h1>Apa itu database?</h1>
+            <p>Database atau basis data adalah kumpulan data yang dikelola sedemikian rupa berdasarkan ketentuan tertentu yang saling berhubungan sehingga mudah dalam pengelolaannya. Melalui pengelolaan tersebut pengguna dapat memperoleh kemudahan dalam mencari informasi.</p>
+            <p class="nama">- Luffiana Wulandari</p>
+        </div>
+        <div class="box">
+            <h1>Fungsi HTML</h1>
+            <p>HTML berfungsi sebagai fondasi sebuah halaman website, di mana developer menggunakan kode HTML untuk mendesain tampilan elemen halaman web di browser, seperti teks, hyperlink, dan file media.</p>
+            <p class="nama">- Effri Ramonzah</p>
+        </div>
+        <div class="box">
+            <h1>Apa itu Bahasa PHP?</h1>
+            <p>HP merupakan singkatan dari PHP : Hypertext Preprocessor adalah salah satu Bahasa scripting open source yang banyak digunakan oleh Web Developer untuk pengembangan Web.</p>
+            <p class="nama">- Abi Rohman</p>
+        </div>
+        <div class="box">
+            <h1>Apa itu CSS ? </h1>
+            <p>CSS adalah bahasa Cascading Style Sheet dan biasanya digunakan untuk mengatur tampilan elemen yang tertulis dalam bahasa markup, seperti HTML. CSS berfungsi untuk memisahkan konten dari tampilan visualnya di situs.</p>
+            <p class="nama">- Tegar Wina Oktarian</p>
+        </div>
+        <div class="box">
+            <h1>Apa itu C++ ? </h1>
+            <p>C++ adalah bahasa pemrograman hasil pengembangan bahasa C, yang bisa digunakan untuk membuat berbagai aplikasi. Misalnya, aplikasi software gadget, game, aplikasi pengolah gambar, hingga sistem operasi baru.</p>
+            <p class="nama">- Irham Arsyat</p>
+        </div>
+        <div class="box">
+            <h1>Fungsi PHP</h1>
+            <p>Salah satu fungsi utama PHP adalah untuk membangun situs web yang dinamis. Dengan PHP, kamu dapat membuat halaman web yang dapat berinteraksi dengan pengguna, menampilkan konten yang berubah secara real-time, dan mengakses basis data untuk mengambil atau menyimpan informasi.</p>
+            <p class="nama">-  Lusi Yuniati</p>
+        </div>
+        <div class="box">
+            <h1>Jenis-Jenis web</h1>
+            <p>Blog : Blog adalah jenis website yang berisi tulisan-tulisan atau artikel yang diupdate secara berkala oleh satu atau beberapa penulis. Blog dapat digunakan untuk tujuan pribadi, pendidikan, atau komersial.</p>
+            <p>E-Commerce : Website e-commerce adalah situs web yang digunakan untuk menjual produk atau jasa secara online. Situs ini biasanya memiliki fitur seperti keranjang belanja, pembayaran online, dan sistem manajemen produk.</p>
+            <p class="nama">- Cherly Berlian Putri</p>
+        </div>
+    </div>
+</body>
+</html>
